@@ -73,3 +73,9 @@ The training configuration can be further customized with additional command lin
 * `--augpipe=bgcfnc` enables all available augmentations (blit, geom, color, filter, noise, cutout).
 
 Please refer to [`python train.py --help`](./docs/train-help.txt) for the full list.
+
+### Running PTI
+The main training script is `scripts/run_pti.py`. The script receives aligned and cropped images from paths configured in the "Input info" subscetion in
+ `configs/paths_config.py`. 
+Results are saved to directories found at "Dirs for output files" under `configs/paths_config.py`. This includes inversion latent codes and tuned generators. 
+The hyperparametrs for the inversion task can be found at  `configs/hyperparameters.py`. They are intilized to the default values used in the paper. 
