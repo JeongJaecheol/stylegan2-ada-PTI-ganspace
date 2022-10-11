@@ -80,6 +80,13 @@ The main training script is `scripts/run_pti.py`. The script receives aligned an
 Results are saved to directories found at "Dirs for output files" under `configs/paths_config.py`. This includes inversion latent codes and tuned generators. 
 The hyperparametrs for the inversion task can be found at  `configs/hyperparameters.py`. They are intilized to the default values used in the paper. 
 
+### Running Gender_changer
+you need to update configs/paths_config.py (e4e, ir_se50, dlib(downloaded from PTI repository), stylegan2_ada_ffhq(trained stylegan2-ada weight))
+it make 2 images (inversion image, gender changed image(gender_changed.png))
+```.bash
+python gender_changer.py --i [input image dir] --o [output(inversion image) dir]
+```
+
 ## Credits
 **StyleGAN2-ada model and implementation:**  
 https://github.com/NVlabs/stylegan2-ada-pytorch
