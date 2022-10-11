@@ -79,3 +79,20 @@ The main training script is `scripts/run_pti.py`. The script receives aligned an
  `configs/paths_config.py`. 
 Results are saved to directories found at "Dirs for output files" under `configs/paths_config.py`. This includes inversion latent codes and tuned generators. 
 The hyperparametrs for the inversion task can be found at  `configs/hyperparameters.py`. They are intilized to the default values used in the paper. 
+
+## Credits
+**StyleGAN2-ada model and implementation:**  
+https://github.com/NVlabs/stylegan2-ada-pytorch
+Copyright © 2021, NVIDIA Corporation.  
+Nvidia Source Code License https://nvlabs.github.io/stylegan2-ada-pytorch/license.html
+
+**PTI model and implementation:**  
+https://github.com/danielroich/PTI
+Copyright (c) 2021 Daniel Roich
+MIT License https://github.com/danielroich/PTI/blob/main/LICENSE 
+
+**GANSpace implementation:**   
+https://github.com/harskish/ganspace
+ㄴ https://github.com/McFredward/ganspace (stylegan2-ada support)
+Copyright (c) 2020 harkish  
+License (Apache License 2.0) https://github.com/harskish/ganspace/blob/master/LICENSE
